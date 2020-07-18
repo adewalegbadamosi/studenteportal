@@ -1,0 +1,192 @@
+
+        body{     margin: 0; background: white; }
+        header{ 
+          height: 15vw;
+          margin: 0 auto ;
+          color:#ff5353;
+          background: #ff5353;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          padding: 1vw 5vw;
+          margin-bottom: 0px;
+          }
+      #header-img{
+         width: 30%;
+           display: block;              
+          }      
+      h1{  
+        color: #fff;
+        font-size: 5vw;
+        text-transform: uppercase;        
+        }
+          
+      h2{          
+          text-align: center;
+          color: red;            
+          font-size: 2.5vw;            
+          margin-top: 6vh; 
+        }   
+    
+      .register-section{
+          margin: 7vh auto;
+          background-color: #fff; 
+          width: 40%;
+          padding-top: 5vh ;
+          padding-bottom: 1px ;
+          border: #ff5353 solid 1px;
+          border-radius: 1vw;
+          padding-left: 5vw;
+          padding-right: 5vw
+        }
+        #register-form{
+          margin-top: 2vh;
+        }
+        
+        h3{
+          text-align: center; 
+           font-size: 2.5vw; 
+           text-transform: uppercase; 
+          }
+        p {
+          text-align: center; 
+           font-size: 2.5vw; 
+          }
+        a {
+          text-decoration: none; 
+           color: #ff5353;
+          }
+        form {
+            font-size: 25px;
+             text-transform: capitalize;
+           letter-spacing: 2px;
+            margin-bottom: 3vh
+          }
+        .form-group{
+          display: flex; 
+          justify-content: space-between;
+          align-items: center;
+        }
+        input{
+          width: 70%;
+          height: 3vh;
+           margin-bottom: 1.5vw; 
+           margin-top: 1vw;  
+          border: 1px solid  #ff5353; 
+         }
+        input[type='file']{
+          text-align: center;
+          padding-bottom: 2px;
+        }
+        input:focus{ 
+          background-color: #eee
+        } 
+        label{
+          font-size: 1.3vw; 
+        } 
+        select {
+          width: 70%; 
+          height: 3.2vh; 
+          margin-bottom: 1.5vw; 
+          margin-top: 1vw;  
+          border: 1px solid  #ff5353;
+          background-color: white; 
+         }
+        .div-button{
+          text-align: center;
+        }       
+        button{
+           background: #ff5353;
+           border-radius: 1.1vw; 
+           width: 11vw; 
+            font-size: 1.5vw; 
+            color: white;
+             padding:3px;
+             }
+       .flash {
+         padding: 1.3vw 0;
+           border: 1px solid; 
+           font-size: 2.5vw;
+         border-radius: 13px;
+          width: 40%;
+           margin:0 auto; 
+           margin-bottom:2.5vw
+          }
+       .flash-failure { 
+          
+           color: red; 
+             text-align: center;
+              font-weight: bold 
+            }
+       #reg-img{ 
+          border: 2px;
+           border-radius: 25px;
+            width: 20%; 
+            display: block;
+             margin: 0 auto;
+            } 
+        h6{
+           font-size: 2vw; 
+           text-align: center; 
+           margin-top: 0px;
+           }
+       
+
+        @media(max-width: 768px){         
+          h2{                      
+            font-size: 7vw;           
+            margin-top: 5vh;           
+          }
+        .register-section{          
+          margin: 5vh auto ;                    
+          width: 60%;
+          padding: 5vh ;
+          padding-bottom:3vh;          
+          border: #ff5353 solid 1px;
+          border-radius: 5vw;
+          }
+         
+        input{
+          width: 60%;
+           height: 4vh;
+            margin-bottom: 3vw;
+             margin-top: 3vw;  
+          border: 1px solid  #ff5353;
+           font-size: 2.5vh;
+           }
+        input:focus{
+           background-color: #eee
+          } 
+          select {
+            width: 62%; 
+           
+           }
+        label{
+          font-size: 3.5vw;
+         }  
+        button{ 
+          background: #ff5353; 
+          margin-top: 3vw;
+          border-radius: 3vw; 
+          width: 50%;  
+          font-size: 5vw;
+           color: white;
+            padding:7px 5px;
+           }
+        h6{
+           font-size: 5vw; 
+           text-align: center; 
+           margin-top: 0px;
+           }
+        .flash {
+          padding: 2vw 0; 
+           border: 1px solid; 
+           font-size: 5vw;
+          border-radius: 13px; 
+          width: 50%;
+           margin:0 auto;
+            margin-bottom:2.5vw
+          }
+        
+        }
+        

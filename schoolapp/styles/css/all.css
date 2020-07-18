@@ -1,0 +1,232 @@
+body{
+    font-family: arial;
+    margin: 0;
+    background:rgb(250, 244, 244);
+}
+.nav-mobile{
+    display: none;
+}
+    
+.nav-web{ 
+    background: #fff;
+    padding: 1.0vw 0;
+}
+
+.nav-web ul{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-web li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 0.2vw;
+
+}
+
+.nav-web a{
+    color: red;
+    font-size: 1.5vw;
+    text-decoration: none;
+    padding: 1.0vw;
+    display: block;
+
+}
+.nav-web a:hover{
+    color:  rgb(25, 0, 255);
+}
+.nav-web .rides button:hover{
+    color:  rgb(25, 0, 255);
+}
+
+.nav-web .rides button {
+    font-size: 1.5vw;
+    color:red;
+    padding: 1.0vw;
+    background-color: white;
+    border:none;
+    outline:none;
+   
+}
+
+.nav-web .rides-content{
+    position:absolute;
+    display:none;
+    z-index:1;
+    background-color: #fff;
+}
+.nav-web .rides-content a{
+   display:block;
+   text-align: center;
+   text-decoration: none;
+   font-size: 1.0vw;
+}
+.nav-web .rides:hover .rides-content{
+    display:block;
+}
+
+header{ 
+    height: 15vw;
+    margin: 0 auto ;
+    color:#ff5353;
+    background: #ff5353;;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1vw 5vw;
+    }
+#header-img{
+    width: 30%;
+     display: block;     
+    }      
+h1{  
+  color: #fff;
+  font-size: 5vw;
+  text-transform: uppercase;        
+  }
+h2{
+  text-align: center;
+  color: red;
+  background:white;
+  font-size: 2vw;
+  padding: 1vw 0; 
+   
+  }
+
+main{
+    width: 100%;
+    margin:0 auto; 
+    margin-bottom: 4vw;   
+}
+
+.flash {
+    padding: 10px 15px; 
+    border: 1px solid; 
+    font-size: 1.5vw;
+    border-radius: 7px;
+    width: 50vw;
+    margin:0 auto;
+    margin-bottom:10px;
+    
+    }
+.flash-success {
+    
+    color: green;
+    text-align: center;
+    }
+.flash-failure {
+    
+    color: red;
+    text-align: center;
+    }
+
+@media screen and (max-width:768px){
+        .nav-mobile{
+            display: block;
+        }
+        .nav-web{
+            display: none;
+        }
+        header{
+            padding: 3vw 5vw 3vw 0;
+            display: flex;
+            flex-direction: row;
+        }
+        header .nav-mobile{
+            background: #ff5353;            
+            flex: 3;          
+        }
+        header h1{
+            flex: 3;
+        }
+        header #header-img{
+            flex: 3;
+        }
+        .nav-mobile img{
+            width: 35%;
+
+        }
+        #nav-search{
+            width: 20%;
+            flex: 1;
+            margin: auto 5vw;
+            padding: 2px;
+           
+            border-radius: 4px;
+        }
+        .nav-mobile ul{
+             flex: 1.5; 
+             padding-inline-start: 0px;
+             margin: 2vw 0;
+             -webkit-padding-start: 0px;
+             padding-left: 0;
+        }
+        
+        .nav-mobile li{
+            list-style-type: none;
+            display: inline-block;         
+        
+        }        
+        .nav-mobile .rides button:hover{
+            color:  rgb(25, 0, 255);
+        }
+        .nav-mobile .rides{
+            margin-left: 0;
+        }
+        .nav-mobile .rides button {              
+            background-color: #ff5353;
+            border:none;
+            outline:none; 
+            text-align: left;
+            margin: 0 4vw;          
+        }
+        
+        .nav-mobile .rides-content{
+            position:absolute;
+            display:none;
+            z-index:1;
+            background-color: #ff5353;
+            height: 100%;
+            padding-top: 30px;
+            width: 60%;
+        }
+        .nav-mobile .rides-content a{       
+          
+           display: block;
+           text-decoration: none;
+           font-size: 4vw;
+           color: white;
+           padding: 2.0vw;
+           margin: 0 7vw;           
+        }
+        .nav-mobile .rides:hover .rides-content{
+            display:block;
+        }
+        
+       
+       
+        p{
+            font-size: 4vw; 
+            font-family: 'Times New Roman', Times, serif; 
+            margin: 6px;
+        }   
+        .flash {            
+            font-size: 4vw; 
+            width: 70vw;          
+        }
+        h2{
+           
+            border-radius: 2vw;
+            padding-top: 2vw;
+            padding-bottom: 2vw;
+            width: 80%;
+            margin: 6vw auto 2vw;
+            background-color: rgb(250, 244, 244);
+            font-weight: normal;
+            font-size: 5vw;
+        }
+
+        
+}

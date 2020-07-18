@@ -1,0 +1,119 @@
+h3 {                
+    color: #000000;               
+    font-weight: bold;
+    font-size: 2vw;                 
+    margin-left: 10vw;             
+} 
+  
+    
+p {
+    text-align: center; 
+    color: #000000;               
+    font-weight: bold;                
+}
+.view {
+        margin: 0 auto;                    
+}
+.view a{ 
+    text-decoration: none;
+}  
+ 
+.display{               
+    border-radius: 5px;   
+    text-align: center;
+    margin: 0 auto; 
+     padding-bottom: 5vw;        
+} 
+form input {
+    border: 1px solid rgb(255, 254, 205);
+    border-radius: 5px;
+    width: 60%;              
+   
+    text-align: center; 
+    font-size: 1.5vw;               
+}
+form label{
+    font-size: 1.5vw;
+}
+.display button{
+    margin: 10px;
+    border: 1px solid rgb(255, 254, 205);
+    border-radius: 5px;
+    width: 15%;               
+    color: #fff;
+    background: #ff5353;
+    font-size: 1.5vw;
+}
+#reg-img{
+      border: 2px;
+       border-radius: 25px; 
+       width: 20%;
+        display: block; 
+        margin: 0 auto;
+    } 
+.course-content{
+    padding: 5vw;
+    margin-bottom: 3vw;
+}
+.course-display{
+    margin: 0 auto;
+    width: 70%;
+    padding: 5vw;
+    border: 1px rgb(185, 161, 161) solid;
+}
+.form-group{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw;
+  }
+  
+ 
+
+
+
+
+
+@media (max-width:768px){
+  
+    h3 {       
+        font-size: 4vw;
+        margin-top: 0;
+        font-weight: normal;
+        display: none;
+    }
+    #input-id {
+        height: 2.5vh; 
+        display: none;     
+    }
+    
+    #reg-img{
+        width: 30%;
+    }
+    div span{
+        font-size: 4.2vw;
+    }
+    .course-display{
+       
+        width: 80%;
+       
+    }
+    form label{
+        font-size: 4vw;
+    }
+    .display button{        
+        width: 30%;     
+        font-size: 3.5vw;
+    }
+    form input {       
+        width: 60%;
+       font-size: 4vw;               
+    }  
+    
+
+    
+}
+    
+    
+
+

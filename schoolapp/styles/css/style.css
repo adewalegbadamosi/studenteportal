@@ -1,0 +1,37 @@
+body{
+  background: #ddd;
+}
+.bg-header{
+  background-color: #ff5353;
+}
+.bg-nav{
+  background-color: #eee;
+}
+.bg-form{
+  background-color: rgb(189, 184, 184);
+}
+.bg-side-nav{
+  background-color: rgb(91, 182, 209);
+}
+.main-content{   
+  background-color: rgb(252, 252, 252);   
+}
+
+ 
+
+
+
+
+@media(max-width:768px){
+
+.side-nav{
+ 
+ display:none;
+} 
+
+.dropdown-menu{
+  background: #ddd;
+}
+}
+
+

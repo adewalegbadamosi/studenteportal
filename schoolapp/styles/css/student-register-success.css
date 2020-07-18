@@ -1,0 +1,158 @@
+
+        body{  font-family: arial;   margin: 0; background: white; }
+        header{ 
+          height: 15vw;
+          margin: 0 auto ;
+          color:#ff5353;
+          background: #ff5353;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          padding: 1vw 5vw;
+          margin-bottom: 0px;
+          }
+      #header-img{
+         width: 30%;
+           display: block;              
+          }      
+      h1{  
+        color: #fff;
+        font-size: 5vw;
+        text-transform: uppercase;        
+        }
+          
+      h2{          
+          text-align: center;
+          color: red;            
+          font-size: 2.5vw;            
+          margin-top: 6vh; 
+        }   
+    
+      .register-section{
+          margin: 7vh auto;
+          background-color: #fff;
+          width: 40%;
+          padding-top: 5vh ;
+          padding-bottom: 1px ;
+          border: #ff5353 solid 1px;
+          border-radius: 5vw;
+        }
+        #register-form{
+          margin-top: 2vh;
+        }
+        
+        h3{
+          text-align: center;  
+          font-size: 2.5vw;
+           text-transform: uppercase;
+           }
+        p { 
+           font-size: 2.5vw;
+           }
+        .reg-details{
+          margin: 0 auto;
+           width: 80%; 
+           margin-left: 35%;
+          }
+        a {
+          text-decoration: none;
+            color: #ff5353;
+          }
+        form {
+           text-align: center; 
+            font-size: 25px;
+             text-transform: capitalize;
+           letter-spacing: 2px; 
+           margin-bottom: 3vh
+          }
+        input{
+          width: 30vw; 
+          height: 3vh;
+           margin-bottom: 3vw;
+            margin-top: 1vw; 
+             border: none; 
+          border-bottom: 1px solid  #ff5353;
+         }
+        input[type='file']{
+          text-align: center;
+          padding-bottom: 2px;
+        }
+        input:focus{
+           background-color: #eee
+          }  
+        label{
+          font-size: 1.5vw; 
+         }        
+        button{ 
+          background: #ff5353;
+          border-radius: 1.1vw; 
+          width: 11vw; 
+           font-size: 1.5vw; 
+           color: white;
+            padding:3px;
+           }
+       .flash {
+         padding: 1.3vw 0; 
+          border: 1px solid; 
+          font-size: 2.5vw;
+         border-radius: 13px;
+          width: 40%;
+           margin:0 auto; 
+           margin-bottom:2.5vw
+          }
+       .flash-failure {
+          
+            color: red;  
+             text-align: center;
+              font-weight: bold 
+            }
+       #reg-img{ 
+          border: 2px;
+           border-radius: 25px;
+            width: 20%; 
+            display: block;
+             margin: 0 auto;
+            } 
+        h6{ 
+          font-size: 2vw; 
+          text-align: center;
+           margin-top: 0px; 
+          }
+       
+
+        @media(max-width: 768px){          
+          h2{                      
+            text-align: center;
+            color: red;
+            font-size: 5vw;
+            margin-top: 15vw;
+            margin-bottom: 20vw;           
+          }
+          h3{
+            text-align: center;
+            font-size: 3vw;
+            text-transform: uppercase;
+            margin-bottom: 6vw;
+          }
+          p{
+            text-align: left;
+            font-size: 4.0vw;
+            margin-top: 6vw;
+          }
+          h6{
+            font-size: 5vw;
+            text-align: center;
+            margin-top: 0px;
+            color: red;
+            margin-top: 6vw;
+          }
+          .reg-details{
+            margin: 0 auto;
+            width: 80%;
+            margin-left: 20%;
+          }
+         
+        
+        
+        }
+        

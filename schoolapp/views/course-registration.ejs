@@ -1,0 +1,162 @@
+<!-- Html for course registration -->
+
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+        <title>Course registration</title>
+
+        <link rel="stylesheet" href="/styles/css/course-registration.css" type="text/css">
+        <link rel="stylesheet" href="/styles/css/all.css" type="text/css">
+        <link rel="icon" href="/styles/images/eportal-logo.png">
+    </head>
+
+    <body>        
+        <%- include('partials/nav-web') %>                             
+
+        <%- include('partials/nav-mob') %>
+        
+        <main>           
+            <section>
+                <div class="create">
+
+                    <div  >
+                            <% if (messages.failure) { %>
+                                  <div class="flash flash-failure"><%= messages.failure %></div>                                
+                                 
+                            <% } %>                            
+                            
+                    </div>
+                    <div><h2>Course registration </h2>
+                    </div>
+                
+                    <div class="display">
+                            <form id= ''  method ='POST' action="/course-registration?_csrf=<%= csrfToken %>" >
+                                <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+
+                                <div class="maincourse">  <strong>Main Courses </strong> </div><br>                                    
+                                    <div class="form-group">
+                                      <label for=""> Course 1</label>
+                                      <select  name="coursea" id="" required autofocus>
+                                          <option value="" >select course</option>
+                                          <option value="Visuals VIS-cps">Visuals</option>
+                                          <option value="Physiology PHS-cps">Physiology</option>
+                                          <option value="Virology VIR-cps">Virology</option>
+                                          <option value="Accounting ACC-cps">Accounting </option>
+                                          <option value="Mathematics MTH-cps">Mathematics </option>
+                                          <option value="Yoruba YOR-cps">Yoruba</option>
+                                          <option value="Zoology ZOO-cps">Zoology</option>
+                                          <option value="Computer CPT-cps">Computer engineering</option>
+                                          <option value="Genetics GEN-cps">Genetics</option>
+                                      </select>                                       
+                                    </div>
+                                   
+                                    <div class="form-group">
+                                            <label for=""> Course 2</label>
+                                            <select  name="courseb" id="" required >
+                                                <option value="" >select course</option>
+                                                
+                                                <option value="Visuals VIS-cps">Visuals</option>
+                                                <option value="Physiology PHS-cps">Physiology</option>
+                                                <option value="Virology VIR-cps">Virology</option>
+                                                <option value="Accounting ACC-cps">Accounting </option>
+                                                <option value="Mathematics MTH-cps">Mathematics </option>
+                                                <option value="Yoruba YOR-cps">Yoruba</option>
+                                                <option value="Zoology ZOO-cps">Zoology</option>
+                                                <option value="Computer CPT-cps">Computer engineering</option>
+                                                <option value="Genetics GEN-cps">Genetics</option>
+                                            </select>                                             
+                                    </div> 
+                                    <div class="form-group">
+                                            <label for=""> Course 3</label>
+                                            <select  name="coursec" id="" required >
+                                                <option value="" >select course</option>
+                                                <option value="Visuals VIS-cps">Visuals</option>
+                                                <option value="Physiology PHS-cps">Physiology</option>
+                                                <option value="Virology VIR-cps">Virology</option>
+                                                <option value="Accounting ACC-cps">Accounting </option>
+                                                <option value="Mathematics MTH-cps">Mathematics </option>
+                                                <option value="Yoruba YOR-cps">Yoruba</option>
+                                                <option value="Zoology ZOO-cps">Zoology</option>
+                                                <option value="Computer CPT-cps">Computer engineering</option>
+                                                <option value="Genetics GEN-cps">Genetics</option>
+                                            </select>                                             
+                                    </div>  
+                                    <div class="form-group">
+                                            <label for=""> Course 4</label>
+                                            <select  name="coursed" id="" required >
+                                                <option value="" >select course</option>
+                                                
+                                                <option value="Visuals VIS-cps">Visuals</option>
+                                                <option value="Physiology PHS-cps">Physiology</option>
+                                                <option value="Virology VIR-cps">Virology</option>
+                                                <option value="Accounting ACC-cps">Accounting </option>
+                                                <option value="Mathematics MTH-cps">Mathematics </option>
+                                                <option value="Yoruba YOR-cps">Yoruba</option>
+                                                <option value="Zoology ZOO-cps">Zoology</option>
+                                                <option value="Computer CPT-cps">Computer engineering</option>
+                                                <option value="Genetics GEN-cps">Genetics</option>
+                                            </select>                                             
+                                    </div> <br>
+
+                                    <div class="elective">  <strong>Elective Courses </strong>  </div> <br>                                   
+                                    <div class="form-group">
+                                      <label for=""> Elective 1</label>
+                                      <select  name="electivea" id="" required autofocus>
+                                          <option value="" >select course</option>
+                                          <option value="English ENG-gns">English for all</option>
+                                          <option value="Mathematics MTH-adm">Mathematics for Admin</option>
+                                          <option value="Mathematics MTH-art">Mathematics for Art</option>
+                                          <option value="Art&Craft ARCr-gns">Art&Craft for all</option>
+                                          <option value="Health & SafetyHSE-gns">Health and Safety</option>
+                                          <option value="Behavioral Studies BHV-gns">Behavioral Studies</option>
+                                          <option value="Education for science EDU-sci">Education for science</option>
+                                          <option value="Accounting ACC-bsc">Accounting for Basics</option>
+                                          <option value="General Law LAW-gns">General Law</option>
+                                          <option value="Meteorology for Art MTR-art">Meteorology for Art</option>
+                                      </select>                                       
+                                    </div> 
+                                    <div class="form-group">
+                                            <label for=""> Elective 2</label>
+                                            <select  name="electiveb" id="" required >
+                                          <option value="" >select course</option>
+                                          <option value="English ENG-gns">English for all</option>
+                                          <option value="Mathematics MTH-adm">Mathematics for Admin</option>
+                                          <option value="Mathematics MTH-art">Mathematics for Art</option>
+                                          <option value="Art&Craft ARCr-gns">Art&Craft for all</option>
+                                          <option value="Health & SafetyHSE-gns">Health and Safety</option>
+                                          <option value="Behavioral Studies BHV-gns">Behavioral Studies</option>
+                                          <option value="Education for science EDU-sci">Education for science</option>
+                                          <option value="Accounting ACC-bsc">Accounting for Basics</option>
+                                          <option value="General Law LAW-gns">General Law</option>
+                                          <option value="Meteorology for Art MTR-art">Meteorology for Art</option>
+                                                
+                                            </select>                                             
+                                    </div> 
+                                    
+                                 
+                                       <div class="div-button">
+                                         <button> Submit  form </button>
+                                       </div>            
+                                    
+                            </form>
+                        <br>
+                        <div>
+                            <a href="/courseform">View course form</a>
+                        </div>
+                    </div> 
+                </div>             
+            
+            </section>  
+        </main> 
+        
+        <script src="/styles/js/functions.js" type="text/javascript"></script>
+
+    </body>
+
+</html>

@@ -1,0 +1,109 @@
+<!-- Html for course form views -->
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Course form</title>
+
+        <link rel="stylesheet" href="/styles/css/courseform.css" type="text/css">
+        <link rel="stylesheet" href="/styles/css/all.css" type="text/css">
+        <link rel="icon" href="/styles/images/eportal-logo.png">
+
+    </head>
+
+    <body>
+
+        <%- include('partials/nav-web') %>                             
+
+        <%- include('partials/nav-mob') %>  
+
+        
+        <main>           
+        
+            <section class='view'>
+               
+                <h2 >  Course Form </h2>
+
+            
+                <div class="display"><br>
+                  
+                    <% if (record) { %> 
+                    
+                        <div >
+                            <% if (messages.success) { %>
+                                  <div class="flash flash-success"><%= messages.success %></div>                                
+                                 
+                            <% } %>                            
+                            
+                        </div>
+
+                     <div class="course-content">
+                         <div class="display-photo">
+                            <img id="reg-img" src="<%=  photo  ? photo : ''  %>"  alt="Profile picture">
+                         </div> <br><br>
+                        <div>
+                            <span> <strong>Student : </strong> <%=user.firstname%>  <%=user.lastname%></span>
+                            <span> <strong>Session : </strong> 2020/21</span><br><br>
+                            <span> <strong>Dept : </strong> <%=user.course%></span>
+                            <span> <strong>Matric no : </strong> <%=user.matricno%></span>
+                        </div>
+                        <div> <br><br>
+                            <p>Courses registered</p> 
+                        </div><br>
+
+                        <div class="course-display">
+                            <form action="">
+                                <div class="form-group">
+                                        <label for=""> Course 1 </label> 
+                                        <input type ='text' readonly value= <%= record.coursea %>  >
+                                </div>
+                                <div class="form-group">
+                                        <label for=""> Course 2 </label> 
+                                        <input type ='text' readonly value= <%= record.courseb %>  >
+                                </div>
+                                <div class="form-group">
+                                        <label for=""> Course 3 </label> 
+                                        <input type ='text' readonly value=<%= record.coursec %>  >
+                                </div>
+                                <div class="form-group">
+                                        <label for=""> Course 4 </label> 
+                                        <input type ='text' readonly value= <%= record.coursed %>  >
+                                </div>
+                                <div class="form-group">
+                                        <label for=""> Elective 1 </label> 
+                                        <input type ='text' readonly value=<%= record.electivea %>  >
+                                </div>
+                                <div class="form-group">
+                                        <label for=""> Elective 2 </label> 
+                                        <input type ='text' readonly  value=<%= record.electiveb %> >
+                                </div>
+
+                            </form>
+                        </div>
+                         
+                     </div> 
+                    
+                    <%} else  {%>
+                     <div class="no-content">
+                         <p> You have no record, please complete your course registration</p>
+                         <a href="/course-registration"> course registration</a>
+                     </div>
+                         
+                    <% } %> 
+                
+                </div>  
+                
+                
+            </section>
+                
+
+        </main>
+
+        <script src="/styles/js/functions.js" type="text/javascript"></script>
+
+    </body>
+
+</html>

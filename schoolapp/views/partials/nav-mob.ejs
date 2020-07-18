@@ -1,0 +1,36 @@
+
+<!-- Partials for nav mobiles -->
+    <section>
+        <header class="mobiles">                  
+    
+                <nav class="nav-mobile">
+                            <ul>                       
+                                    <li> 
+                                            <div class="rides">
+                                            <button> <img src="/styles/images/nav-image.jpg" alt=""></button>
+                                            <div class="rides-content"> 
+                                                <a href="/">E-portal</a> <hr>                                                       
+                                                <a href="/course-registration">Course Reg</a>    <hr> 
+                                                <a href="/courseform"> Course Form </a> <hr>                                                
+                                                <a href="/access/student-registration">Student Reg</a>  <hr> 
+                                                <% if(user) {%>
+                
+                                                   <a href="/access/logout">Logout</a><hr>
+                                                    <%} else {%>
+                                            
+                                                    <a href="/access/log-in">Login</a><hr>
+                                                    <%}%>
+                                                
+                                                                    
+                                            </div>
+                                        </div>     
+                                    </li>
+                            </ul>
+                                    
+                </nav>
+                        
+                <h1 class="h1-all"> E-PORTAL </h1> 
+                <img id="header-img" src="/styles/images/school-building2.png" alt="school building">           
+    
+        </header>
+    </section>
